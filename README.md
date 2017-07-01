@@ -1,6 +1,6 @@
 # sonic_hits
 
-> A Vue.js project
+> SONIC_HITS WEBSITE
 
 ## Build Setup
 
