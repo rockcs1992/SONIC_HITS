@@ -1,6 +1,6 @@
 <template>
   <div class="content-wrapper">
-    <div class="wrapper">
+    <div class="services-wrapper">
       <el-collapse v-model="activeName" accordion>
         <el-collapse-item title="Music" name="1">
           <div>
@@ -37,7 +37,7 @@
   }
 </script>
 <style scoped>
-  .wrapper {
+  .services-wrapper {
     padding:4% 15%;
   }
   mark {

@@ -1,6 +1,6 @@
 <template>
   <div class="content-wrapper">
-    <div class="wrapper">
+    <div class="about-wrapper">
       <pre>
         We are a game audio startup specializing in providing linear, interactive and spatial audio contents. <br/>
       </pre>
@@ -37,7 +37,7 @@
 </script>
 
 <style scoped>
- .wrapper {
+ .about-wrapper {
   padding:4% 20% ;
   text-align: center;
  }

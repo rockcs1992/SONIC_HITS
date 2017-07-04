@@ -45,8 +45,15 @@ export default {
   top:5%;
 }
 
+.logo {
+  position:absolute;
+  left:5%;
+  display:inline-block;
+}
+
 .header {
   height:20%;
+  position:relative;
 }
 
 .page-content {
