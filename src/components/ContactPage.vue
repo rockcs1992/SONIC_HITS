@@ -1,5 +1,5 @@
 <template>
-  <div class="contact-wrapper">
+  <div class="content-wrapper">
     <div class="contact-text">
       <h5>Contact us for your audio needs!</h5>
     </div>
@@ -35,6 +35,10 @@
 <style scoped>
   div {
     padding:20px;
+  }
+
+  .content-wrapper {
+    padding:0;
   }
   input {
     max-width: 50%;

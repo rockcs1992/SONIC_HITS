@@ -1,5 +1,5 @@
 <template>
-  <div class="page-wrapper">
+  <div class="content-wrapper">
     <canvas id='canvas'></canvas>
    </div> 
 </template>
@@ -20,9 +20,9 @@
   }
 </script>
 
-<style scoped>
+<style>
 
-.page-wrapper {
+.content-wrapper {
   height:100%;
   width:100%;
   position:relative;
