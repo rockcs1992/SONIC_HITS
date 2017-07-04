@@ -1,7 +1,6 @@
 <template>
-  <div class="wrapper">
-      <canvas id="canvas"></canvas>
-    
+  <div class="page-wrapper">
+    <canvas id='canvas'></canvas>
    </div> 
 </template>
 
@@ -23,13 +22,17 @@
 
 <style scoped>
 
-.wrapper {
-  height:80%;
+.page-wrapper {
+  height:100%;
+  width:100%;
+  position:relative;
 }
+
 #canvas {
   opacity:0.2;
   height:100%;
   width:100%;
+  position:absolute;
 }
 /*.wrapper {
   height:inherit;

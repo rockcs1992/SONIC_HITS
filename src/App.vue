@@ -6,7 +6,9 @@
       </div>
       <Navbar></Navbar>
     </div>
-    <router-view></router-view>
+    <div class='page-content'>
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -20,13 +22,19 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
+* {
+  padding:0;
+  margin:0;
+}
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height:inherit;
   width:inherit;
+
 }
 
 #app img {
@@ -39,5 +47,10 @@ export default {
 
 .header {
   height:20%;
+}
+
+.page-content {
+  height:80%;
+  width:inherit;
 }
 </style>
