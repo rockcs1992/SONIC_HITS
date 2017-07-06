@@ -37,6 +37,10 @@
 </script>
 
 <style scoped>
+
+pre mark {
+  font-variant: small-caps;
+}
  .about-wrapper {
   padding:4% 20% ;
   text-align: center;

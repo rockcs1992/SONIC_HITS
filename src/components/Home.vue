@@ -1,6 +1,8 @@
 <template>
   <div class="content-wrapper">
-    <canvas id='canvas'></canvas>
+      <div class="about-wrapper">
+        <canvas ref="canvas"></canvas>
+      </div>
    </div> 
 </template>
 
@@ -16,6 +18,15 @@
       handleSelect(key, keyPath) {
         console.log(key, keyPath);
       }
+    },
+    mounted() {
+      //canvas code here
+      var canvas = this.$refs.canvas;    
+      var $ = canvas.getContext("2d");
+      var w = canvas.width;
+      var h = canvas.height;
+      $.fillRect(0,0,w,h);
+
     }
   }
 </script>
@@ -28,7 +39,7 @@
   position:relative;
 }
 
-#canvas {
+canvas {
   opacity:0.2;
   height:100%;
   width:100%;
