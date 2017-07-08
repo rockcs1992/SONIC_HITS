@@ -22,11 +22,7 @@ export default {
 }
 </script>
 
-<style>
-* {
-  padding:0;
-  margin:0;
-}
+<style scoped>
 
 #app {
   font-family: 'Poiret One', cursive;
@@ -37,7 +33,7 @@ export default {
 
 }
 
-#app img {
+.logo img {
   height: 129px;
   width:100px;
   position:relative;
@@ -56,8 +52,5 @@ export default {
   position:relative;
 }
 
-.page-content {
-  height:80%;
-  width:inherit;
-}
+
 </style>

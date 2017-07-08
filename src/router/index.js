@@ -5,6 +5,7 @@ import ContactPage from '@/components/ContactPage'
 import Home from '@/components/Home'
 import ServicePage from '@/components/ServicePage'
 import AboutPage from '@/components/AboutPage'
+import TestPage from '@/components/TestPage'
 
 
 Vue.use(Router)
@@ -30,6 +31,11 @@ export default new Router({
     	path: '/about',
     	name: 'AboutPage',
     	component: AboutPage
+    },
+    {
+      path: '/test',
+      name: 'TestPage',
+      component: TestPage
     }
   ]
 })

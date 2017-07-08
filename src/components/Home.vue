@@ -26,7 +26,6 @@
       var w = canvas.width;
       var h = canvas.height;
       $.fillRect(0,0,w,h);
-
     }
   }
 </script>
