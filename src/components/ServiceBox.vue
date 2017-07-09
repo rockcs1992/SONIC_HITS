@@ -1,18 +1,24 @@
 <template>
 	<div class="service-box">
-		<img :src="imageSrc" />
-		<div class="service-title">
-			<p>{{title}}</p>
+		<div class='tile-original'>
+			<div class="tile-original-content">
+				<img :src="imageSrc" />
+				<div class="service-title">
+					<p>{{title}}</p>
+				</div>
+			</div>
 		</div>
-		<div class="service-content">
-			<slot>Content to be added</slot>
+		<div class='tile-flip' v-bind:class="'open-to-' + openTo">
+			<div class="service-content">
+				<slot>Content to be added</slot>
+			</div>
 		</div>
 	</div>
 </template>
 
 <script>
 export default {
-	props: ['imageSrc','title'],
+	props: ['imageSrc','title','openTo'],
 }
 </script>
 
@@ -27,26 +33,72 @@ img {
 	padding:5% 0;
 }
 
-.service-box {
-	width:40%;
-	display:inline-block;
-	transform:scaleX(1);
-	transform-origin: right center;
-	transition:all .5s;
-	opacity:1;
-	position:relative;
+.tile-original, .tile-flip{
+	position:absolute;
 }
 
-.service-box:hover {
-	cursor: pointer;
-	transform:scaleX(-1);
-	opacity: 0.2;
+.tile-original{
+	height:100%;
+	width:100%;
+}
+
+.tile-flip {
+	height:100%;
+	width:112%;
+}
+
+.tile-original {
+	background-color: white;
+	z-index:2;
+}
+
+.tile-flip {
+	background-color: white;
+	opacity:0.1;
+	transform:scaleX(-1);	  
+	right:100%;
+	transition:all .5s;
+	visibility:hidden;
+	z-index:3;
+}
+
+.open-to-right {
+	left:100%;
+	transform-origin:0 0;
+}
+
+.open-to-left{
+	right:100%;
+	transform-origin: 100% 100%;
+}
+
+.service-box {
+	width:40%;
+	height:50%;
+	display:inline-block;
+	position:relative;
+	margin:2%;
+}
+
+.service-box:hover .tile-flip{
+	transform:scaleX(1);
+  	opacity:1;
+  	visibility:visible;
+}
+
+.tile-original-content {
+	position:absolute;
+	left:50%;
+	top:50%;
+	transform:translate(-50%,-50%);
 }
 
 .service-content{
 	width:100%;
 	height:100%;
 	position:relative;
+	padding:13%;
+	box-sizing: border-box;
 }
 	
 </style>
