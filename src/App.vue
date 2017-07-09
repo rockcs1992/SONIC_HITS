@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <div class='header'>
+    <header class='header'>
       <div class='logo'>
         <router-link to="/"><img src="./assets/fulllogo.png"></router-link>
       </div>
       <Navbar></Navbar>
-    </div>
+    </header>
     <div class='page-content'>
       <router-view></router-view>
     </div>
