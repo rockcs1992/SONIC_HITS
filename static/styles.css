@@ -4,11 +4,8 @@
 }
 
 .page-content {
-  height:80%;
-  width:inherit;
-}
-
-mark {
-	background-color: white;
-	font-family: 'Open Sans', sans-serif;
+  position: absolute;
+  top: 75px;
+  bottom: 0px;
+  width:100%;
 }

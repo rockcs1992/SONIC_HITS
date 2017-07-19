@@ -1,13 +1,16 @@
 <template>
   <div id="app">
-    <header class='header'>
+    <div class='sidebar'>
       <div class='logo'>
-        <router-link to="/"><img src="./assets/fulllogo.png"></router-link>
+        <router-link to="/"><img src="./assets/fulllogo_curve_shadow.png"></router-link>
       </div>
-      <Navbar></Navbar>
-    </header>
+      <Navbar class='navbar'></Navbar>
+    </div>
     <div class='page-content'>
       <router-view></router-view>
+    </div>
+    <div class='footer'>
+      <p class='disclaimer'>© 2017 Sonic Hits Inc.</p>
     </div>
   </div>
 </template>
@@ -25,7 +28,7 @@ export default {
 <style scoped>
 
 #app {
-  font-family: 'Poiret One', cursive;
+  font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height:inherit;
@@ -34,22 +37,56 @@ export default {
 }
 
 .logo img {
-  height: 129px;
-  width:100px;
+  /*height: 129px;*/
+  /*width:100px;*/
+  height: 100%;
   position:relative;
-  left:5%;
+  left:18%;
   top:5%;
+
+
 }
 
 .logo {
   position:absolute;
-  left:5%;
-  display:inline-block;
+  /*left:-1%;*/
+  height:280%;
+  width: 130px;
+  margin: 0;
+  z-index: 10;
+
+
+  /*display:inline-block;*/
 }
 
-.header {
-  height:20%;
+.sidebar {
+  height:75px;
   position:relative;
+  background-color: #FF6138;
+  -moz-box-shadow:2px 2px 10px #CCCCCC;
+  -webkit-box-shadow:2px 2px 10px #CCCCCC;
+  box-shadow:2px 2px 10px #CCCCCC;
+}
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  z-index: 10;
+  background-color: rgba(90, 90, 90, 0.8);
+  text-align: center;
+  line-height: 50px;
+  /*padding: 20px;*/
+
+}
+
+.disclaimer{
+  position: relative;
+  letter-spacing: 1pt;
+  font-size: 10px;
+  color: #cccccc;
+
 }
 
 

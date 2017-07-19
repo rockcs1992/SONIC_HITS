@@ -99,9 +99,6 @@ img {
 	position:relative;
 	padding:13%;
 	box-sizing: border-box;
-	background-color:black;
-	opacity:0.5;
-	color:white;
 }
 	
 </style>
