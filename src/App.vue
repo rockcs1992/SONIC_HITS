@@ -1,11 +1,13 @@
 <template>
   <div id="app">
-    <div class='sidebar'>
+    <header class='header'>
+      <nav class='navbar'>
+        <Navbar />
+      </nav>
       <div class='logo'>
         <router-link to="/"><img src="./assets/fulllogo_curve_shadow.png"></router-link>
       </div>
-      <Navbar class='navbar'></Navbar>
-    </div>
+    </header>
     <div class='page-content'>
       <router-view></router-view>
     </div>
@@ -36,31 +38,33 @@ export default {
 
 }
 
+.header {
+  width:100%;
+  height:30%;
+  position:relative;
+}
+
 .logo img {
-  /*height: 129px;*/
-  /*width:100px;*/
   height: 100%;
   position:relative;
   left:18%;
   top:5%;
-
-
 }
 
 .logo {
   position:absolute;
   /*left:-1%;*/
-  height:280%;
+  height:100%;
   width: 130px;
-  margin: 0;
+  top:-1px;
   z-index: 10;
 
 
   /*display:inline-block;*/
 }
 
-.sidebar {
-  height:75px;
+.navbar {
+  height:35%;
   position:relative;
   background-color: #FF6138;
   -moz-box-shadow:2px 2px 10px #CCCCCC;
