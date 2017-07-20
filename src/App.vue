@@ -1,12 +1,12 @@
 <template>
   <div id="app">
     <header class='header'>
-      <nav class='navbar'>
-        <Navbar />
-      </nav>
       <div class='logo'>
         <router-link to="/"><img src="./assets/fulllogo_curve_shadow.png"></router-link>
       </div>
+      <nav class='navbar'>
+        <Navbar />
+      </nav>   
     </header>
     <div class='page-content'>
       <router-view></router-view>
