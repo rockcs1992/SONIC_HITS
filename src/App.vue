@@ -9,9 +9,9 @@
     <div class='page-content'>
       <router-view></router-view>
     </div>
-    <div class='footer'>
+    <footer class='footer'>
       <p class='disclaimer'>© 2017 Sonic Hits Inc.</p>
-    </div>
+    </footer>
   </div>
 </template>
 
@@ -77,7 +77,7 @@ export default {
   background-color: rgba(90, 90, 90, 0.8);
   text-align: center;
   line-height: 50px;
-  /*padding: 20px;*/
+  position:fixed;
 
 }
 

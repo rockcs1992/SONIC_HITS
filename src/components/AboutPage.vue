@@ -1,13 +1,15 @@
 <template>
   <div class="content-wrapper">
-    <div class="background-pic"></div>
-    <div class="slogan">
-       <pre>
-        "We are a game audio startup specializing in providing linear, interactive and spatial audio contents." <br/>
-      </pre>
+    <div class="background-container">
+      <div class="slogan">
+         <pre>
+          We are a game audio startup specializing in providing linear, interactive and spatial audio contents.
+        </pre>
+      </div>
     </div>
+    
     <div class="grid-wrapper">
-      <div class="about-wrapper">
+      <div class="column-wrapper">
         <div class="text-wrapper">
           <h2>Writing Chamber</h2>
           <h3>Sound Design, Music Scoring and Production</h3>
@@ -17,7 +19,7 @@
           </p>
         </div>
       </div>
-      <div class="about-wrapper">
+      <div class="column-wrapper">
         <div class="text-wrapper">
           <h2>Project Studio</h2>
           <h3>Recording, Mixing, Spacialization and Middleware Integration</h3>
@@ -27,7 +29,7 @@
           </p>
         </div>
       </div>
-      <div class="about-wrapper">
+      <div class="column-wrapper">
         <div class="text-wrapper">
           <h2>The Lab</h2>
           <h3>Experiment, Research and building cool stuff</h3>
@@ -62,53 +64,41 @@
 
   pre {
     white-space: normal;
-    z-index:3;
-    /*display: inline;*/
     font-size: 3.8vw;
-    /*line-height: 2;*/
-    width: 100%;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 1pt;
     color: white;
   }
 
-  .background-pic{
+  .background-container{
     position: relative;
     top: 50px;
     background-image: url("../assets/about_background.png");
     z-index: 2;
-    /*background-color: red;*/
     height: 400px;
     width: 100%;
   }
 
   .slogan{
     position: absolute;
-    top: 130px;
-    left: 350px;
+    top: 22%;
+    left: 22%;
     right: 50px;
-    height: 290px;
-    /*background-color: red;*/
     z-index:3;
   }
 
   .grid-wrapper{
     position: relative;
     top: 100px;
-    /*bottom: 100px;*/
     left: 10%;
     width: 90%;
-    /*right: 0;*/
     min-height: 280px;
-    /*background-color: red;*/
-
   }
 
-  .about-wrapper{
+  .column-wrapper{
     float: left;
     width: 33%;
     height: 100%;
-
   }
 
   .text-wrapper{
@@ -130,13 +120,5 @@
   p{
     font-size: 11pt;
   }
-
-
-
-  /*.wrapper {
-    height:inherit;
-    width:inherit;
-    background-image: url('../assets/background.jpg');
-  }*/
 
 </style>
