@@ -8,9 +8,9 @@
         <Navbar />
       </nav>   
     </header>
-    <div class='page-content'>
+    <main class='page-content'>
       <router-view></router-view>
-    </div>
+    </main>
     <footer class='footer'>
       <p class='disclaimer'>© 2017 Sonic Hits Inc.</p>
     </footer>
