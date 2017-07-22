@@ -40,11 +40,19 @@
   }
 
   .content-wrapper {
+    position: relative;
     padding:0;
   }
 
   .contact-wrapper {
+    text-align: center;
     padding:0;
+    position: absolute;
+    left: 240px;
+    top: 80px;
+    right: 60px;
+    background-color: aqua;
+    border-radius: 20px;
   }
 
 
@@ -53,8 +61,17 @@
   }
 
   .contact-form {
-    max-width: 50%;
+    text-align: center;
+    max-width: 500px;
     display:inline-block;
+  }
+
+
+  h5 {
+    font-family: "Montserrat ExtraLight", sans-serif;
+    letter-spacing: 2pt;
+    text-align: center;
+    font-size: 30pt;
   }
   
 </style>

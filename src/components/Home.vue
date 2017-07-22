@@ -1,9 +1,9 @@
 <template>
-  <div class="content-wrapper">
+    <div class="content-wrapper">
       <div class="about-wrapper">
         <canvas ref="canvas"></canvas>
       </div>
-   </div> 
+    </div>
 </template>
 
 <script>

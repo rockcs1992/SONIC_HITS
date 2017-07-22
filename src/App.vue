@@ -5,10 +5,10 @@
         <router-link to="/"><img src="./assets/fulllogo_curve_shadow.png"></router-link>
       </div>
       <nav class='navbar'>
-        <Navbar />
-      </nav>   
+        <Navbar/>
+      </nav>
     </header>
-    <main class='page-content'>
+    <main class='page-content' id="contents">
       <router-view></router-view>
     </main>
     <footer class='footer'>
@@ -23,7 +23,7 @@ export default {
   components: {
     'Navbar': Navbar
   },
-  name: 'app'
+    name: 'app'
 }
 </script>
 
@@ -40,7 +40,7 @@ export default {
 
 .header {
   width:100%;
-  height:30%;
+  height:215px;
   position:relative;
 }
 
@@ -90,6 +90,7 @@ export default {
   letter-spacing: 1pt;
   font-size: 10px;
   color: #cccccc;
+
 
 }
 
