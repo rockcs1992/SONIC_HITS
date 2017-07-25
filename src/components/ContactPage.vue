@@ -124,7 +124,7 @@
 
 
   label{
-    font-family: "Montserrat Light", sans-serif;
+    font-family: "Montserrat ExtraLight", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     letter-spacing: 2pt;

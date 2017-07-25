@@ -5,6 +5,7 @@ import ContactPage from '@/components/ContactPage'
 import Home from '@/components/Home'
 import ServicePage from '@/components/ServicePage'
 import AboutPage from '@/components/AboutPage'
+import DemoPage from '@/components/DemoPage'
 import TestPage from '@/components/TestPage'
 
 
@@ -31,6 +32,11 @@ export default new Router({
     	path: '/about',
     	name: 'AboutPage',
     	component: AboutPage
+    },
+    {
+      path: '/demo',
+      name: 'DemoPage',
+      component: DemoPage
     },
     {
       path: '/test',

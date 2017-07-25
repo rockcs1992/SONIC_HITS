@@ -29,12 +29,6 @@
             </p>
           </div>
         </div>
-        <div class="column-wrapper3">
-          <div class="text-wrapper">
-            <h2>The Lab</h2>
-            <h3>Experiment, Research and building cool stuff</h3>
-          </div>
-        </div>
       </div>
     </div>
 </template>
@@ -91,29 +85,25 @@
 
   .grid-wrapper{
     position: relative;
-    top: 80px;
+    top: 100px;
     left: 10%;
     width: 90%;
-    min-height: 320px;
+    /*min-height: 320px;*/
   }
 
   .column-wrapper1 {
     float: left;
-    width: 30%;
+    width: 40%;
     height: 100%;
   }
 
   .column-wrapper2{
     float: left;
-    width: 38%;
+    width: 58%;
     height: 100%;
   }
 
-  .column-wrapper3{
-    float: left;
-    width: 30%;
-    height: 100%;
-  }
+
 
 
 
