@@ -43,7 +43,12 @@
 }
 
 .el-menu--horizontal>.el-menu-item:hover, .el-menu--horizontal>.el-submenu.is-active .el-submenu__title, .el-menu--horizontal>.el-submenu:hover .el-submenu__title {
+    /*background-color: #fe7c5b;*/
     border-bottom: 4px solid whitesmoke;
+}
+
+.el-menu--horizontal>.el-menu-item:active, .el-menu--horizontal>.el-submenu.is-active .el-submenu__title, .el-menu--horizontal>.el-submenu:hover .el-submenu__title {
+    background-color: #ea5a35;
 }
 
 .el-menu--horizontal.el-menu--dark .el-submenu .el-menu-item:hover, .el-menu--horizontal.el-menu--dark .el-submenu .el-submenu-title:hover, .el-menu-item:hover {

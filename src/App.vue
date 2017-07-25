@@ -56,7 +56,7 @@ export default {
   /*left:-1%;*/
   height:100%;
   width: 130px;
-  top:-1px;
+  top:-1.4px;
   z-index: 10;
 
 
@@ -67,9 +67,9 @@ export default {
   height:35%;
   position:relative;
   background-color: #FF6138;
-  -moz-box-shadow:2px 2px 10px #CCCCCC;
-  -webkit-box-shadow:2px 2px 10px #CCCCCC;
-  box-shadow:2px 2px 10px #CCCCCC;
+  -moz-box-shadow:2px 2px 10px rgba(30, 30, 30, 0.15);
+  -webkit-box-shadow:2px 10px 5px rgba(30, 30, 30, 0.15);
+  box-shadow:2px 2px 10px rgba(30, 30, 30, 0.15);
 }
 
 .footer{

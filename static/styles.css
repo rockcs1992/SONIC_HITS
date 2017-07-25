@@ -4,8 +4,9 @@
 }
 
 .page-content {
+  /*background-color: #f8f8f8;*/
   position: absolute;
   top: 75px;
-  bottom: 0px;
+  bottom: 0;
   width:100%;
 }
