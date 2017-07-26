@@ -86,10 +86,11 @@ export default {
 }
 
 .disclaimer{
+  font-family: "Montserrat ExtraLightLight", sans-serif;
   position: relative;
   letter-spacing: 1pt;
   font-size: 10px;
-  color: #cccccc;
+  color: rgba(240, 240, 240, 0.6);
 
 
 }

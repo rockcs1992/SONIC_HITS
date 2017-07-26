@@ -29,7 +29,7 @@ import ServiceAccordian from '@/components/ServiceAccordian'
     position: absolute;
     padding:0;
     width: 100%;
-    top: 2vh;
+    top: 1.5%;
     bottom: 60px;
   }
 
@@ -59,7 +59,6 @@ import ServiceAccordian from '@/components/ServiceAccordian'
     position:absolute;
     width: 80%;
     font-family: "Montserrat ExtraLight",sans-serif;
-
   }
 
   mark{
