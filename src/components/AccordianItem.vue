@@ -29,11 +29,7 @@ export default {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    background-color: rgba(10,10,10,0.5);
-    border: 1.5px solid #FF6138;
-    border-radius: 10px;
     margin: 50px 10px 50px 10px;
-    width: 25%;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
@@ -71,7 +67,16 @@ export default {
     line-height: 1.6vw;
   }
 
+  .table-cell:hover {
+    width: 80%;
+
+  }
+
   .table-cell span {
+    font-family: "Montserrat Light", sans-serif;
+    font-weight: lighter;
+    text-align: justify;
+    width: 90%;
     position: absolute;
     opacity: 0;
     font-size: 0;
@@ -91,7 +96,7 @@ export default {
   .table-cell:hover span {
     opacity: 1;
     font-size: 1.5vw;
-    line-height: 2vw;
+    line-height: 2.4vw;
     color: #c95031;
 
     /*-webkit-transition-delay: 100ms;*/
@@ -106,4 +111,15 @@ export default {
     width: 5vw;
     height: auto;
   }
+
+  mark{
+    background-color: transparent;
+    font-family: "Montserrat SemiBold", sans-serif;
+    font-size: 1.5vw;
+    line-height: 2.4vw;
+    color: #c95031;
+
+  }
+
+
 </style>

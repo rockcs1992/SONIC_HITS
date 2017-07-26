@@ -3,7 +3,7 @@
     <div class="children-content-wrapper">
       <div class="services-wrapper-background">
         <div class="services-wrapper">
-          <ServiceAccordian />
+          <ServiceAccordian/>
         </div>
       </div>
     </div>

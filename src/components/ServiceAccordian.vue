@@ -11,7 +11,7 @@
       Artists in our sound design team are skillful <mark>mood makers</mark>. Based on the requirement of your project, we can recreate vivid scenes by <mark>field recording</mark>, build up mysterious atmosphere by <mark>sound sculpting</mark>, <mark>Foley</mark> a lively sound if it is hard to record directly, or <mark>synthesize</mark> an unique one from scratch. We have the creativity and experience to always come up with the right sound for you.
     </span>
   </AccordianItem>
-  <AccordianItem :imageSrc="mixerIcon" title="Mixing/Recording">
+  <AccordianItem :imageSrc="mixerIcon" title="Mixing  Recording">
   	<span>
       <mark>Supreme sound quaility</mark> is the foundation of our services. We got the facilities and equipments, and most importantly, the right people to ensure that. Our <mark>experienced</mark> sound director is here to make sure every <mark>detail</mark> is being captured in recording sessions, and our final mixdown will sound great on <mark>any playback device</mark>
     </span>
@@ -49,11 +49,11 @@ export default {
 </script>
 	
 <style scoped>
-  .table {
+    .table {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
     height: 100%;
-  }
+    }
 </style>
