@@ -12,7 +12,7 @@
       <router-view></router-view>
     </main>
     <footer class='footer'>
-      <p class='disclaimer'>© 2017 Sonic Hits Inc.</p>
+      <p class='disclaimer'>© 2017 SONIC HITS CO.</p>
     </footer>
   </div>
 </template>
