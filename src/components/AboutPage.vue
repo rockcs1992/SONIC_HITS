@@ -9,43 +9,33 @@
       </div>
 
       <div class="grid-wrapper">
-        <div class="column-wrapper1">
-          <div class="text-wrapper">
-            <h2>Writing Chamber</h2>
-            <h3>Sound Design, Music Scoring and Production</h3>
-            <br/>
-            <p>
-              Writing Chamber is all about creation. Our talented composers and sound designers here are not only experts in delivering emotions, they are also good listeners. From a subtle Sound FX to thrilling Soundscape, from a concise Motive to magnificent Full Scores, every bit of sound is crafted elaborately for amplifying the vibe of your game.
-            </p>
-          </div>
-        </div>
-        <div class="column-wrapper2">
-          <div class="text-wrapper">
-            <h2>Project Studio</h2>
-            <h3>Recording, Mixing, Spacialization and Middleware Integration</h3>
-            <br/>
-            <p>
-              Project Studio is devoted to premium sound quality. All the recording and mixing sessions take place here. It features a 7.1 sound system, an Apogee Symphony I/O, an UAD Satellite, Hi-End mics and preamps... And, most importantly, a veteran, OCD sound director. Vocal, instrumental, Foley... everything is captured detailedly here. At the end of the day, whether you play our final mixdown through a fancy sound system or simply on your laptop, it will always sounds great.
-            </p>
-          </div>
-        </div>
+        <Column>
+          <h2>Writing Chamber</h2>
+          <h3>Sound Design, Music Scoring and Production</h3>
+          <br/>
+          <p>
+            Writing Chamber is all about creation. Our talented composers and sound designers here are not only experts in delivering emotions, they are also good listeners. From a subtle Sound FX to thrilling Soundscape, from a concise Motive to magnificent Full Scores, every bit of sound is crafted elaborately for amplifying the vibe of your game.
+          </p>
+        </Column>
+        <Column>
+          <h2>Project Studio</h2>
+          <h3>Recording, Mixing, Spacialization and Middleware Integration</h3>
+          <br/>
+          <p>
+            Project Studio is devoted to premium sound quality. All the recording and mixing sessions take place here. It features a 7.1 sound system, an Apogee Symphony I/O, an UAD Satellite, Hi-End mics and preamps... And, most importantly, a veteran, OCD sound director. Vocal, instrumental, Foley... everything is captured detailedly here. At the end of the day, whether you play our final mixdown through a fancy sound system or simply on your laptop, it will always sounds great.
+          </p>
+        </Column>
       </div>
     </div>
 </template>
 
 <script>
+
+import Column from '@/components/Column'
   export default {
-    data() {
-      return {
-        activeIndex: '1',
-        activeIndex2: '1'
-      };
+    components: {
+      'Column': Column
     },
-    methods: {
-      handleSelect(key, keyPath) {
-        console.log(key, keyPath);
-      }
-    }
   }
 </script>
 
@@ -89,30 +79,6 @@
     left: 10%;
     width: 90%;
     /*min-height: 320px;*/
-  }
-
-  .column-wrapper1 {
-    float: left;
-    width: 40%;
-    height: 100%;
-  }
-
-  .column-wrapper2{
-    float: left;
-    width: 58%;
-    height: 100%;
-  }
-
-
-
-
-
-  .text-wrapper{
-    position:relative;
-    left: 5%;
-    width: 90%;
-    height: 100%;
-    text-align: justify;
   }
 
   h2{
